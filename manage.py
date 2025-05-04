@@ -16,6 +16,6 @@ def install_packages():
         except subprocess.CalledProcessError:
             print(f"Failed to install '{package}'.")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     print("Installing required packages...")
     install_packages()
